@@ -1,4 +1,4 @@
-# Aviral09.github.io
+# My name is Aviral
 
 Welcome to my personal blog!
 
