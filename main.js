@@ -1,4 +1,4 @@
-var myNav = document.getElementById("header");
+var myNav = document.getElementById("nav-bar");
 
 window.onscroll = function() {
   "use strict";
