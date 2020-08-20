@@ -53,11 +53,24 @@ header {
 }
 
 #box1 {
-    background-image:url(telephone.jpg); 
+    background-image:url(office.jpg); 
     background-size:cover;
     height: 100vh;
     width: 98.7vw;
     display:table;
+}
+.main-page {
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 60%;
+	margin: auto;
+}
+.main-page h2 {
+	font-size: 2.5rem;
 }
 
 #box2 {
