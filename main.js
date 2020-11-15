@@ -16,7 +16,7 @@ window.onscroll = function () {
 particlesJS("particles-js", {
 	particles: {
 		number: {
-			value: 90,
+			value: 80,
 			density: {
 				enable: true,
 				value_area: 700,
