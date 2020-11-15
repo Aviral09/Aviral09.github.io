@@ -1,67 +1,80 @@
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 
 body {
-    color: black;
-    margin:0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    overflow-x: hidden;
+	color: black;
+	margin: 0;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	overflow-x: hidden;
 }
 
 header {
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    background-color: transparent;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+	background-color: transparent;
 }
 
-#nav-bar{
-    position: absolute;
-    width: 98.75vw;
+#header-img {
     display: inline-block;
-    z-index: 3;
 }
 
-#nav-bar a{
-    text-decoration: none;
-    color: white;
+#header-img img{
+    height: 50px;
+    width: 70px;
+    margin-left: 40px;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
-.nav-link{
-    float: right;
-    padding: 1rem;
-    padding-left: 1.5rem;
-    font-size: 1.5rem;
+#nav-bar {
+	position: absolute;
+	width: 100vw;
+	display: inline-block;
+	z-index: 3;
 }
 
-.nav-link:hover{
-    color: black;
-    transition: all 0.3s ease 0s;
-    background-color: cornsilk;
+#nav-bar a {
+	text-decoration: none;
+	color: white;
 }
 
-#nav-bar a:hover{
-    color: white;
+.nav-link {
+	float: right;
+	padding: 1rem;
+	padding-left: 1.5rem;
+	padding-right: 2.5rem;
+	font-size: 1.5rem;
+}
+
+.nav-link:hover {
+	color: black;
+	transition: all 0.3s ease 0s;
+	background-color: cornsilk;
+}
+
+#nav-bar a:hover {
+	color: white;
 }
 
 .scroll {
-    background-image:
-    radial-gradient(
-      circle at 0% 100%,
-      red 0%,
-      cyan 40%,
-      rebeccapurple 100%
-    );
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 0px 0px;
+	background-image: radial-gradient(
+		circle at 0% 100%,
+		red 0%,
+		cyan 40%,
+		rebeccapurple 100%
+	);
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 0px 0px;
 }
 
 #home {
-    background-size:cover;
-    height: 100vh;
-    width: 98.7vw;
-    display:table;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	display: table;
 }
 .main-page {
 	color: bisque;
@@ -71,88 +84,26 @@ header {
 	transform: translate(-50%, -50%);
 	text-align: center;
 	width: 60%;
-    margin: auto;
-    z-index: 2;
+	margin: auto;
+	z-index: 2;
 }
 .main-page h2 {
 	font-size: 2.5rem;
 }
 
 .main-page h2:hover {
-    animation: bounce 0.5s infinite;
-   -webkit-animation: bounce 0.5s infinite;
-   -moz-animation: bounce 0.5s infinite; 
-}
-
-#about {
-    /* background-image:url(piano1.jpg); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 98.7vw;
-    display:table;
-    color: white;
-}
-
-.outer-box{
-    background-color: transparent;
-    box-sizing: content-box;
-    border: 10px solid #000;
-    border-radius: 20px;
-    -webkit-transform: translate(50%,50%) rotate(15deg);
-    transform: translate(50%,50%) rotate(15deg);
-}
-
-.outer-box:hover{
-    -webkit-transform: translate(50%,50%) rotate(0deg);
-    transform: translate(50%,50%) rotate(0deg);
-    -webkit-transition: .1s ease-in-out;
-    transition: .1s ease-in-out;
-}
-
-.image-box{
-    height: 300px;
-    width: auto;
-    transform: rotate(-15deg);
-}
-.image-box img{
-    height: 300px;
-    width: auto;
-    border-radius: 10px;
-}
-
-.image-box:hover{
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .1s ease-in-out;
-    transition: .1s ease-in-out;
-}
-
-#projects {
-    /* background-image:url(office.jpg);  */
-    background-size: contain;
-    height: 100vh;
-    width: 98.7vw;
-    display:table;
-    color: black;
-}
-
-#contact {
-    /* background-image:url(telephone.jpg);  */
-    background-size: contain;
-    height: 100vh;
-    width: 98.7vw;
-    display:table;
-    color: white;
+	animation: bounce 0.5s infinite;
+	-webkit-animation: bounce 0.5s infinite;
+	-moz-animation: bounce 0.5s infinite;
 }
 
 #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    /* background-image: url("images/try.jpg"); */
-    z-index: 2;
-    background-size: cover;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	/* background-image: url("images/try.jpg"); */
+	z-index: 2;
+	background-size: cover;
 }
 
 .video-wrapper {
@@ -160,77 +111,189 @@ header {
 	top: 0;
 	left: 0;
 	height: 100vh;
-	width: 98.7vw;
+	width: 100vw;
 }
 .video-wrapper video {
 	height: 100vh;
-	width: 98.7vw;
+	width: 100vw;
 	object-fit: cover;
 	overflow: hidden;
 }
 
-.main-page > div { perspective: 100px;}
+#about {
+	/* background-image:url(piano1.jpg); */
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	color: white;
+}
+
+.outer-box {
+	background-color: transparent;
+	box-sizing: content-box;
+	border: 10px solid #000;
+	border-radius: 20px;
+	-webkit-transform: translate(50%, 50%) rotate(15deg);
+	transform: translate(50%, 50%) rotate(15deg);
+}
+
+.outer-box:hover {
+	-webkit-transform: translate(50%, 50%) rotate(0deg);
+	transform: translate(50%, 50%) rotate(0deg);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
+.image-box {
+	height: 300px;
+	width: auto;
+	-webkit-transform: rotate(-15deg);
+	transform: rotate(-15deg);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+.image-box img {
+	height: 300px;
+	width: auto;
+	border-radius: 10px;
+}
+
+.image-box:hover {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
 
 .parallax {
-    background-image: url('piano2.jpg');
-    height: 100%; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: url("aurora.jpg");
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .content {
-    display: flex;
+	display: flex;
 	color: white;
-    text-align: center;
+	text-align: center;
 }
 .content p {
-    font-size: 1.5rem;
-    font-weight: bold;
-    width: 50%;
-    transform: translate(60%, 90%);
+	font-size: 1.5rem;
+	font-weight: bold;
+	width: 50%;
+	transform: translate(70%, 95%);
+}
+
+#projects {
+	/* background-image:url(office.jpg);  */
+	background-size: contain;
+	height: fit-content;
+	width: 100vw;
+	color: black;
+}
+
+.project-title{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.card {
+	width: 314px;
+	height: 380px;
+	border-radius: 30px;
+	background: rgb(222, 222, 222);
+	transform-style: preserve-3d;
+	transform: perspective(500px);
+	margin: 2rem;
+	text-align: center;
+}
+
+.image {
+	width: 300px;
+	transform: translateZ(50px);
+	filter: drop-shadow(2px 2px 20px #222);
+}
+
+.title {
+    font-size: 2rem;
+    height: fit-content;
+    transform: translateZ(35px);
+    margin: 1rem 0 1rem 0;
+}
+
+.card-content {
+	font-size: 1rem;
+    transform: translateZ(30px);
+    height: 80px;
+    margin: 1rem;
+}
+
+.icon {
+    transform: translateZ(40px);
+}
+
+#contact {
+	/* background-image:url(telephone.jpg);  */
+	background-size: contain;
+	height: 100vh;
+	width: 100vw;
+	display: table;
+	color: white;
 }
 
 @media (max-width: 767.98px) {
-    #particles-js{
-    background-size: contain;
-    } 
+	#particles-js {
+		background-size: contain;
+	}
 }
 
 @-webkit-keyframes bounce {
-    0%,  
-    100% {
-       -webkit-transform: translateY(0);
-    } 
-    50% {
-        -webkit-transform: translateY(-10px);
-    }
+	0%,
+	100% {
+		-webkit-transform: translateY(0);
+	}
+	50% {
+		-webkit-transform: translateY(-10px);
+	}
 }
 @-moz-keyframes bounce {
-    0%, 
-    100% {
-       -moz-transform: translateY(0);
-    }
-    50% {
-       -moz-transform: translateY(-10px);
-    }
+	0%,
+	100% {
+		-moz-transform: translateY(0);
+	}
+	50% {
+		-moz-transform: translateY(-10px);
+	}
 }
 @-o-keyframes bounce {
-    0%,
-    100% {
-       -o-transform: translateY(0);
-    }
-    50% {
-       -o-transform: translateY(-10px);
-    }
+	0%,
+	100% {
+		-o-transform: translateY(0);
+	}
+	50% {
+		-o-transform: translateY(-10px);
+	}
 }
 @keyframes bounce {
-    0%,  
-    100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
 }

@@ -16,7 +16,7 @@ window.onscroll = function () {
 particlesJS("particles-js", {
 	particles: {
 		number: {
-			value: 50,
+			value: 90,
 			density: {
 				enable: true,
 				value_area: 700,
@@ -134,21 +134,3 @@ particlesJS("particles-js", {
 
 	retina_detect: true,
 });
-
-// $(".main-page").on("mousemove", function (e) {
-// 	centerX = $(this).width() / 2.0;
-// 	centerY = $(this).height() / 2.0;
-
-// 	moveX = centerX - e.offsetX;
-// 	moveY = centerY - e.offsetY;
-
-// 	$("#output").text(moveX);
-// 	$(this).css({
-// 		transform:
-// 			"translate(-50%, -50%) rotateY(" +
-// 			moveX / 20 +
-// 			"deg) rotateX(" +
-// 			moveY / 10 +
-// 			"deg)",
-// 	});
-// });
