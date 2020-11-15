@@ -3,6 +3,7 @@
 <head>
     <title>Aviral Kumar Goel</title>
     <link rel="stylesheet" href="./main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./main.js">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,40 +12,86 @@
 <body>
     <header>
         <div id="header">
-            <div id="nav-bar">
-                <div class="nav-link">
-                    <a href="#box4">Contact</a>
-                </div>
-                <div class="nav-link">
-                    <a href="#box3">Project</a>
-                </div>
-                <div class="nav-link">
-                    <a href="#box2">Skills</a>
-                </div>
-                <div class="nav-link">
-                    <a href="#box1">About Me</a>
-                </div>
+            <!-- <div id="header-img">
+                <button ID="mute" onclick=muteAudio>
+            </div> -->
+            <div id="nav-bar" data-aos="fade-left" data-aos-duration="1000">
+                <a href="#contact">
+                    <div class="nav-link">
+                        Contact Me
+                    </div>
+                </a>
+                <a href="#projects">
+                    <div class="nav-link">
+                        Projects
+                    </div>
+                </a>
+                <a href="#about">
+                    <div class="nav-link">
+                        About Me
+                    </div>
+                </a>
+                <a href="#home">
+                    <div class="nav-link">
+                        Home
+                    </div>
+                </a>
             </div>
         </div>
     </header>
 
     <main>
-        <div id='box1'>
+        <!-- <audio controls autoplay loop>
+            <source src="audi.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> -->
+        <div id='home'>
+            <div id= "particles-js">
+            </div>
             <div class="main-page">
-                <h2>Hello I'm Aviral Kumar Goel, a second year B.E. (Computer Science) undergraduate student at BITS Pilani, K. K. Birla Goa Campus.  </h2>
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                    <h2><span style="color: bisque;">Hello!</span><br><br>My name is Aviral Kumar Goel.</h2>
+                </div>
+            </div>
+            <div class="video-wrapper">
+                <video autoplay loop muted poster="http" >
+                    <source src="ani.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
+        <div id='about'>
+            <div class="parallax">
+                <div>
+					<div class="content">
+						<div data-aos="fade-right" data-aos-duration="1000">
+							<div class="outer-box">
+								<div class="image-box">
+									<img src="Aviral.jpeg">
+								</div>
+							</div>
+						</div>
+						<div data-aos="fade-left" data-aos-duration="1000">
+							<p>I am second year Computer Science student at BITS Pilani, K. K. Birla Goa.<br>I have experience as a Web Developer. 
+								I have worked with Android Studio and Image Processing Libraries like OpenCV as well. 
+								Currently, I am exploring Machine Learning through online courses.</p>
+						</div>
+					</div>
+				</div>
+            </div>
         </div>
-        
-        <div id='box2'>
-            Hi
+        <div id='projects'>
+            hi
         </div>
-        <div id='box3'>
-            Hi
-        </div>
-        <div id='box4'>
+        <div id='contact'>
             Hi
         </div>
 
-</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script src="main.js"></script>
+</body>
 </html>
