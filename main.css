@@ -123,23 +123,40 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
+	min-height: max-content;
 	width: 100vw;
 	display: flex;
 	color: white;
 }
 
+.parallax {
+	background-image: url("aurora.jpg");
+	height: 100vh;
+	width: 100vw;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+	margin-top: 20vh;
+}
+
 .outer-box {
 	background-color: transparent;
-	box-sizing: content-box;
 	border: 10px solid #000;
 	border-radius: 20px;
-	-webkit-transform: translate(50%, 50%) rotate(15deg);
-	transform: translate(50%, 50%) rotate(15deg);
+	-webkit-transform: rotate(15deg);
+	transform: rotate(15deg);
 }
 
 .outer-box:hover {
-	-webkit-transform: translate(50%, 50%) rotate(0deg);
-	transform: translate(50%, 50%) rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
 	-webkit-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
 }
@@ -165,30 +182,17 @@ header {
 	transition: 0.3s ease-in-out;
 }
 
-.parallax {
-	background-image: url("aurora.jpg");
-	height: 100vh;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 .content {
-	display: flex;
-	color: white;
-	text-align: center;
-}
-.content p {
 	font-size: 1.5rem;
 	font-weight: bold;
-	width: 50%;
-	transform: translate(70%, 95%);
+	color: white;
+	text-align: center;
+	margin-top: 10vh;
+	max-width: 500px;
+	padding: 0.5rem;
 }
 
 #projects {
-	/* background-image:url(office.jpg);  */
-	background-size: contain;
 	height: fit-content;
 	width: 100vw;
     color: black;
@@ -250,6 +254,7 @@ header {
 	height: 100vh;
 	width: 100vw;
 	color: white;
+	align-items: center;
 }
 
 .parallax1 {
@@ -264,19 +269,43 @@ header {
 .contact-content {
 	width: 50%;
 	margin: auto;
-	transform: translateY(100%) !important;
 }
 .contact-content table {
 	width: 100%;
 	color: white;
 	text-align: center;
 	font-size: 1.5rem;
-	line-height: 5rem;
+	height: 95vh;
 }
 
-@media (max-width: 767.98px) {
+footer{
+	width:100%;
+	text-align: center;
+	color: #000;
+}
+
+@media (max-width: 768px) {
 	#particles-js {
 		background-size: contain;
+	}
+
+	.image-box {
+		height: 200px;
+	}
+	.image-box img {
+		height: 200px;
+	}
+
+	.image{
+		width: 100%;
+	}
+
+	.container{
+		margin-top: 3rem;
+	}
+
+	header{
+		display: none;
 	}
 }
 
