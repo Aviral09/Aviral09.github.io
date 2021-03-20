@@ -3,12 +3,45 @@ var myNav = document.getElementById("nav-bar");
 window.onscroll = function () {
 	"use strict";
 	if (
-		document.body.scrollTop >= 10 ||
-		document.documentElement.scrollTop >= 280
+		document.body.scrollTop >= 2100 
+		// document.documentElement.scrollTop <= 300
+	) {
+		myNav.classList.add("scroll3");
+		myNav.classList.remove("scroll1");
+		myNav.classList.remove("scroll2");
+		myNav.classList.remove("scroll");
+	} 
+	else if (
+		document.body.scrollTop >= 1200 
+		// document.documentElement.scrollTop <= 300
+	) {
+		myNav.classList.add("scroll2");
+		myNav.classList.remove("scroll1");
+		myNav.classList.remove("scroll");
+		myNav.classList.remove("scroll3");
+	}
+	else if (
+		document.body.scrollTop >= 600 
+		// document.documentElement.scrollTop <= 300
+	) {
+		myNav.classList.add("scroll1");
+		myNav.classList.remove("scroll");
+		myNav.classList.remove("scroll2");
+		myNav.classList.remove("scroll3");
+	}
+	else if (
+		document.body.scrollTop >= 10
+		// document.documentElement.scrollTop <= 300
 	) {
 		myNav.classList.add("scroll");
-	} else {
+		myNav.classList.remove("scroll1");
+		myNav.classList.remove("scroll2");
+		myNav.classList.remove("scroll3");
+	}else {
 		myNav.classList.remove("scroll");
+		myNav.classList.remove("scroll1");
+		myNav.classList.remove("scroll2");
+		myNav.classList.remove("scroll3");
 	}
 };
 

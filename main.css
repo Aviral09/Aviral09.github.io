@@ -62,7 +62,34 @@ header {
 	background-image: radial-gradient(
 		circle at 0% 100%,
 		red 0%,
+		black 40%,
+		rebeccapurple 100%
+	);
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 0px 0px;
+}
+.scroll1 {
+	background-image: radial-gradient(
+		circle at 0% 100%,
+		red 0%,
+		pink 40%,
+		rebeccapurple 100%
+	);
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 0px 0px;
+}
+.scroll2 {
+	background-image: radial-gradient(
+		circle at 0% 100%,
+		red 0%,
 		cyan 40%,
+		rebeccapurple 100%
+	);
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 0px 0px;
+}
+.scroll3 {
+	background-image: radial-gradient(
+		circle at 0% 100%,
+		red 0%,
+		orange 40%,
 		rebeccapurple 100%
 	);
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 0px 0px;
@@ -130,7 +157,7 @@ header {
 }
 
 .parallax {
-	background-image: url("aurora.jpg");
+	background-image: url("aurora1.jpg");
 	min-height: 100vh;
 	height: max-content;
 	width: 100vw;
@@ -151,8 +178,8 @@ header {
 	background-color: transparent;
 	border: 10px solid #000;
 	border-radius: 20px;
-	-webkit-transform: rotate(15deg);
-	transform: rotate(15deg);
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
 }
 
 .outer-box:hover {
@@ -165,8 +192,8 @@ header {
 .image-box {
 	height: 300px;
 	width: auto;
-	-webkit-transform: rotate(-15deg);
-	transform: rotate(-15deg);
+	-webkit-transform: rotate(-30deg);
+	transform: rotate(-30deg);
 	-webkit-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
 }
@@ -185,7 +212,7 @@ header {
 
 .content {
 	font-size: 1.5rem;
-	font-weight: bold;
+	font-weight: lighter;
 	color: white;
 	text-align: center;
 	margin-top: 10vh;
@@ -194,6 +221,7 @@ header {
 }
 
 #projects {
+	/* background-image: url("test1.jpg"); */
 	height: fit-content;
 	width: 100vw;
     color: black;
@@ -206,7 +234,7 @@ header {
     font-size: 3rem;
     margin-bottom: 0;
     /* margin-top: 1rem; */
-    color: rgb(0, 102, 255);
+    color: black;
 }
 .flex-container {
     display: flex;
